@@ -1,4 +1,4 @@
-window.indentHelper = (function () {
+window.IndentHelper = (function () {
     var indent = function(textarea, reversed) {
         //////////
         // variable for indent function scope
@@ -149,6 +149,8 @@ window.indentHelper = (function () {
         },
 
         addEventListener: function(targetElement, eventName) {
+            eventName = (eventName || 'keydown');
+
             if(targetElement.addEventListener) {
                 targetElement.addEventListener(eventName, this.eventListener, false);
             } else if(targetElement.attachEvent) {
