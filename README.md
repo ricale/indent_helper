@@ -10,14 +10,14 @@ Indentation using tab key on textarea selector
 All results of the examples below are the same.
 
 ### IndentHelper.addEventListener
-    var targetElement = document.getElementById('source');
+    var targetElement = document.getElementById('some_textarea');
 
     IndentHelper.addEventListener(targetElement);
     // or
     IndentHelper.addEventListener(targetElement, 'keydown');
 
 ### IndentHelper.eventListener
-    var targetElement = document.getElementById('source');
+    var targetElement = document.getElementById('some_textarea');
     
     targetElement.addEventListener('keydown', IndentHelper.eventListener, false);
 

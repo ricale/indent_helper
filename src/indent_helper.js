@@ -29,6 +29,7 @@ window.IndentHelper = (function () {
 
             end     = end == -1 ? source.content.length - 1 : end;
             content = source.content.substring(start, end);
+
             return {
                 start:   start,
                 end:     end,
